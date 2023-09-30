@@ -1,5 +1,6 @@
 *{
   margin-top: 0;
+  max-height: 700px;
 }
 
 body, .iphone-14-6 {
@@ -9,8 +10,8 @@ body, .iphone-14-6 {
   background-position: center center;
   background-attachment: fixed;
   min-height: 100%;
-}
-
+  z-index: -1;
+  }
 
 p {
   margin-bottom: 0;
@@ -25,8 +26,8 @@ nav{
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-  padding-left: 20px;
   z-index: 2;
+  padding-left: 20px;
 }
 
 nav ul{
@@ -46,7 +47,6 @@ nav ul li a{
   transition: 0.5s;
   font-size: 18px;
   padding: 16px;
-  z-index: 2;
 }
 
 nav ul li a:hover{
@@ -54,7 +54,6 @@ nav ul li a:hover{
     background-color: #f3960b;
     -webkit-transform: scale(1.1);
     transform: scale(1.2);
-    z-index: 2;
   
 }
 
@@ -90,13 +89,15 @@ nav ul li a:hover{
 .group-icon {
   position: relative;
   width: 296px;
+  top: -16px;
+  opacity: 65%;
+  left: -8px;
   height: 381px;
-  z-index: 0;
   mix-blend-mode: hard-light;
 }
 .group-11-1 {
-  position: absolute;
-  top: -106px;
+  position: fixed;
+  top: -90px;
   left: 136px;
   display: flex;
   flex-direction: row;
@@ -126,7 +127,7 @@ nav ul li a:hover{
 
 .image-2-svg {
   position: absolute;
-  top: 105px;
+  top: 50px;
   left: 15px;
   width: 195.87px;
   height: 192.44px;
@@ -145,7 +146,7 @@ nav ul li a:hover{
 .win2 {
   font-size: 50%;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   top: 35%;
   left: 5px;
 }
@@ -157,9 +158,9 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  top: 20%; 
+  top: 34%; 
   font-size: 128px;
-  left: 28%;
+  left: 23%;
   bottom: -260px;
   letter-spacing: 0.1em;
   width: 50%;
@@ -220,17 +221,25 @@ nav ul li a:hover{
   font-family: var(--font-kanit);
 }
 
-.hamburg {
-  display: inline-block;
-  cursor: pointer;
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 8px;
-  transition: 0.7s;
 
-}
 
-.bar1,
+
+@media only screen and (max-width:640px) {
+  .menu {
+    display: none;
+  }
+  
+  .hamburg {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    transition: 0.7s;
+  
+  }
+
+  .bar1,
 .bar3 {
   width: 35px;
   height: 5px;
@@ -250,6 +259,7 @@ nav ul li a:hover{
   margin-bottom: 6px;
   transition: 0.4s;
 }
+
 
 /* Hambur */
 .change{
@@ -271,9 +281,9 @@ nav ul li a:hover{
   transform: translate(0, -12px) rotate(45deg);
 }
 
-@media only screen and (max-width:640px) {
-  .menu {
-    display: none;
+
+  .image-2-svg {
+    top: 56px;
   }
 
   .ellipse-3-svg{
@@ -291,7 +301,7 @@ nav ul li a:hover{
   
     .win2 {
       position: absolute;
-      top: 40%;
+      top: 45%;
       font-size: 50%;
       left: 52%;
       transform: translateY(-50%) translateX(-50%);
@@ -299,9 +309,9 @@ nav ul li a:hover{
 
     .win {
       font-size: 100px;
-      top: 30%;
+      top: 35%;
       width: 70%;
-      height: 36%;
+      height: 40%;
       left: 15%;
     }
 
