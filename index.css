@@ -2,15 +2,15 @@
   margin-top: 0;
 }
 
-body, .iphone-14-6 {
+body {
   background-image: url(./public/ภาพบรรยากาศสจล\ \(6\).jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   min-height: 100%;
+  
 }
-
 
 p {
   margin-bottom: 0;
@@ -58,6 +58,54 @@ nav ul li a:hover{
   
 }
 
+.iphone-14-6 {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-kanit);
+}
+
+.iphone-14-6 {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-kanit);
+}
+
+.iphone-14-6 {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-kanit);
+}
+
+.iphone-14-6 {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-white);
+  font-family: var(--font-kanit);
+}
+
 .iphone-14-6-child,
 .iphone-14-6-inner,
 .iphone-14-6-item {
@@ -90,7 +138,10 @@ nav ul li a:hover{
 .group-icon {
   position: relative;
   width: 296px;
+  top:-40px;
+  left: 15px;
   height: 381px;
+  opacity: 0.7;
   z-index: 0;
   mix-blend-mode: hard-light;
 }
@@ -126,10 +177,10 @@ nav ul li a:hover{
 
 .image-2-svg {
   position: absolute;
-  top: 105px;
+  top: 60px;
   left: 15px;
-  width: 195.87px;
-  height: 192.44px;
+  width: 180.87px;
+  height: 180.44px;
   object-fit: cover;
   mix-blend-mode: luminosity;
 }
@@ -157,9 +208,9 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  top: 20%; 
+  top: 30%; 
   font-size: 128px;
-  left: 28%;
+  left: 25.1%;
   bottom: -260px;
   letter-spacing: 0.1em;
   width: 50%;
@@ -188,7 +239,7 @@ nav ul li a:hover{
   font-size: 20%;
   letter-spacing: 0.1em;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 900;
   background-color: rgb(255, 255, 255);
   border: none;
   padding: 20px;
@@ -207,17 +258,130 @@ nav ul li a:hover{
       transform: scale(1.2);
 }
 
-
-.iphone-14-6 {
+.group-icon1 {
   position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 844px;
+  width: 79.36px;
+  height: 78.14px;
+}
+
+.group-icon2,
+.group-icon3 {
+  position: relative;
+  width: 88.36px;
+  height: 125.02px;
+}
+
+.group-icon3 {
+  width: 89.73px;
+}
+
+.group-icon4,
+.group-icon5 {
+  position: relative;
+  width: 79.36px;
+  height: 111.28px;
+}
+
+.group-icon5 {
+  width: 88.78px;
+  height: 125.02px;
+}
+
+.group-icon6,
+.group-icon7 {
+  position: relative;
+  width: 116.93px;
+  height: 116.87px;
+}
+
+.group-icon7 {
+  width: 90.64px;
+  height: 103.03px;
+}
+
+.group-icon8,
+.group-icon9 {
+  position: relative;
+  width: 125.04px;
+  height: 125.02px;
+}
+
+.group-icon9 {
+  width: 109.47px;
+  height: 109.38px;
+}
+
+.group-icon10,
+.group-icon11 {
+  position: relative;
+  width: 111.19px;
+  height: 78.14px;
+}
+
+.group-icon11 {
+  width: 125.04px;
+  height: 111.76px;
+}
+
+.group-icon13,
+.group-icon14 {
+  position: relative;
+  width: 78.3px;
+  height: 77.03px;
+}
+
+.group-icon14 {
+  width: 125.04px;
+  height: 88.67px;
+}
+
+.group-icon15,
+.group-icon16 {
+  position: relative;
+  width: 111.19px;
+  height: 111.28px;
+}
+
+.group-icon16 {
+  width: 88.36px;
+  height: 88.67px;
+}
+
+.group-icon17,
+.group-icon18 {
+  position: relative;
+  width: 73.6px;
+  height: 72.11px;
+}
+
+.group-icon18 {
+  width: 96.11px;
+  height: 84.6px;
+}
+
+.group-7-svg-1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-7-svg-1 {
+  top: 645.15px;
+  left: -181px;
+  width: 326.7px;
   overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-smi);
-  color: var(--color-white);
-  font-family: var(--font-kanit);
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px;
+  transform: rotate(-47.83deg);
+  transform-origin: 0 0;
+}
+
+.group-icon1 {
+  position: relative;
+  width: 79.36px;
+  height: 78.14px;
 }
 
 .hamburg {
@@ -280,12 +444,16 @@ nav ul li a:hover{
     margin-top: 5px;
   }
 
+  body {
+    background-image: url(./public/image-5--svg@2x.jpg);
+  }
+
     .win1 {
       position: absolute;
-      top: 20%;
+      top: 10%;
       left: 50%;
       transform: translateY(-50%) translateX(-50%);
-      font-size: 100%;
+      font-size: 120px;
   
     }
   
@@ -299,14 +467,20 @@ nav ul li a:hover{
 
     .win {
       font-size: 100px;
-      top: 30%;
+      top: 32%;
       width: 70%;
       height: 36%;
       left: 15%;
+      background-color: transparent;
+      box-shadow: none;
+      text-shadow: none;
     }
 
     .enter-web {
-     top: 35%
+     top: 35%;
+     background-color: #ff6600;
+     color: white;
+     text-shadow: none;
     }
 
   
