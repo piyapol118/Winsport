@@ -16,3 +16,4 @@ icon1 = folium.CustomIcon('./folium_map/images/kmitl.jpg', icon_size=(60, 60))
 marker1 = folium.Marker(location=[13.724705075669817, 100.7800474824299], popup=popup1, tooltip=tooltip, icon=icon1).add_to(maps)
 
 maps.save("./flasksnaja/templates/routemap.html")
+
