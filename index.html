@@ -14,15 +14,17 @@
   <div class="iphone-14-6-child"></div>
 
   <nav>
-    <img class="ellipse-3-svg" alt="" src="./public/ellipse-3--svg@2x.png" />
-    <ul class="menu">
-      <li><a href="">HOME</a></li>
-      <li><a href="">ABOUT</a></li>
-    </ul>
-    <div class="hamburg" onclick="toggleHam(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+    <div class="nav-wrapper">
+      <img class="ellipse-3-svg" alt="" src="./public/ellipse-3--svg@2x.png" />
+      <ul class="menu" id="myMenu">
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+      </ul>
+      <div class="hamburg" onclick="toggleHam(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </div>
   </nav>
   <div class="iphone-14-6">
@@ -34,7 +36,7 @@
       <img class="group-icon" alt="" src="./public/group.svg" />
     </div>
     <img class="image-2-svg" alt="" src="./public/image-2--svg@2x.png" />
-    <div class="win">
+    <div class="win" id="winDiv">
       <div class="win1">WIN</div>
       <div class="win2">SPORT</div>
       <button class="enter-web">ENTER</button>
