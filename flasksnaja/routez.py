@@ -9,3 +9,7 @@ def home():
 @routes.route("/map")
 def maps():
     return render_template("routemap.html")
+
+@routes.route("/sec")
+def sec():
+    return render_template("second_page.html")
