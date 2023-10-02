@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, width=device-width" />
+{% block content %} 
+  <link rel="stylesheet" href="../static/index.css">
 
-  <link rel="stylesheet" href="../static/global.css" />
-  <link rel="stylesheet" href="../static/index.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" />
-</head>
-
-<body>
   <div class="iphone-14-6-child"></div> <!-- ถึงมันจะดูโง่ แต่ **ห้ามลบ**-->
-  {%}
-  <nav>
-    <div class="nav-wrapper">
-      <img class="ellipse-3-svg" alt="" src="../static/public/ellipse-3--svg@2x.png" />
-      <ul class="menu" id="myMenu">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ABOUT</a></li>
-      </ul>
-      <div class="hamburg" onclick="toggleHam(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </div>
-  </nav>
   <div class="iphone-14-6">
 
     <div class="iphone-14-6-item"></div>
@@ -81,7 +58,5 @@
       <img class="group-icon16" alt="" src="../static/public/group19.svg" />
     </div>
   </div>
-  <script src="../static/script.js"></script>
-</body>
 
-</html>
+{% endblock %}
