@@ -1,0 +1,56 @@
+* {
+    margin-top: 0;
+}
+
+body {
+    background-color: #fc8803;
+    overflow: hidden;
+}
+
+ 
+.list-box {
+    position: absolute;
+    left: 13%;
+    z-index: -1;
+    top: 10%;
+    width: 70%;
+    height: 80vh;
+    background-color: #ffe710;
+    border-style: solid;
+    border-width: 11px;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tire-img-1 {
+    position: absolute;
+    width: 150%;
+    top: -10%;
+    z-index: -1;
+    left: -25%;
+}
+
+.tire-img-2 {
+    position: absolute;
+    z-index: -1;
+    width: 160%;
+    top: 50%;
+    left: -40%;
+}
+
+.frame-div {
+    position: relative;
+    overflow-y: auto;
+}
+
+@media only screen and (min-width: 900px) {
+    .tire-img-1 {
+    display: none;
+    }
+
+    .tire-img-2 {
+        display: none;
+    }
+    
+}
