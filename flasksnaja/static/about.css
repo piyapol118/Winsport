@@ -5,7 +5,6 @@
 
 body {
     background-color: #fc8803;
-    overflow: hidden;
 }
 
 .win-text {
@@ -36,13 +35,17 @@ body {
     font-size: 2em;
 }
 
-.description,
-.description-last-box {
-    width: 80%;
+.description {
+    width: 75%;
     background-color: white;
     border-radius: 0px 0px 30px 30px;
     text-align: center;
     align-items: center;
     margin: auto;
+    padding-left: 2.5%;
+    padding-top: 2%;
+    padding-right: 2.5%;
+    padding-bottom: 40px;
     font-size: 20px;
+    margin-bottom: 50px;
 }
