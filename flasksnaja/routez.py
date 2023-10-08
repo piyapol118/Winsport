@@ -18,3 +18,8 @@ def sec():
 @routes.route("/third")
 def third():
     return render_template("third.html")
+
+
+@routes.route("/about")
+def about():
+    return render_template("about_page.html")
