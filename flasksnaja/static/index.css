@@ -105,10 +105,11 @@ p {
 
 .image-2-svg {
   position: fixed;
-  top: 110px;
+  top: 120px;
   left: 15px;
-  width: 180.87px;
-  height: 180.44px;
+  width: 160.87px;
+  height: 160.44px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0)) ;
   object-fit: cover;
   z-index: -1;
   mix-blend-mode: luminosity;
@@ -139,7 +140,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  top: 25%;
+  top: 18%;
   z-index: 2;
   font-size: 128px;
   left: 25.1%;
