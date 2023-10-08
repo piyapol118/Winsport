@@ -1,0 +1,129 @@
+* {
+    margin-top: 0;
+    font-family: 'Kanit';
+}
+
+body {
+    background-color: #fc8803;
+    overflow-x: hidden;
+}
+
+
+
+.tire-img-1, 
+.tire-img-3, 
+.tire-img-5 {
+    position: absolute;
+    width: 150%;
+    top: -10%;
+    z-index: -1;
+    left: -25%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.tire-img-3{
+    top: 120%;
+}
+
+
+.tire-img-2,
+.tire-img-4 {
+    position: absolute;
+    width: 150%;
+    top: 50%;
+    z-index: -1;
+    left: -40%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+.tire-img-4 {
+    top: 175%;
+}
+
+.places {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -10px;
+    width: 75%;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 0px 50px 50px 0px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+       
+}
+
+.image-container {
+    height: 35vh;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.description, .description-last-box {
+    width: 80%;
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.description-last-box{
+    margin-bottom: 60px;
+}
+
+.win-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.win-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 460px) {
+    .tire-img-4 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .places {
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    .tire-img-1,
+    .tire-img-2,
+    .tire-img-3 {
+        display: none;
+    }
+
+
+}

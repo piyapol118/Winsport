@@ -13,3 +13,8 @@ def maps():
 @routes.route("/sec")
 def sec():
     return render_template("second_page.html")
+
+
+@routes.route("/third")
+def third():
+    return render_template("third.html")
