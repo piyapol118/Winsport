@@ -1,0 +1,123 @@
+* {
+    margin-top: 0;
+    font-family: 'Kanit';
+}
+
+body {
+    background-color: #fc8803;
+    overflow: hidden;
+}
+
+ 
+.list-box {
+    position: absolute;
+    left: 13%;
+    z-index: -1;
+    top: 13%;
+    width: 70%;
+    overflow-y: auto;
+    height: 70vh;
+    background-color: #ffe710;
+    border-style: solid;
+    border-width: 11px;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.list-box::-webkit-scrollbar {
+    background-color: rgba(172, 162, 162, 0.3);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.tire-img-1 {
+    position: absolute;
+    width: 150%;
+    top: -10%;
+    z-index: -1;
+    left: -25%;
+}
+
+.tire-img-2 {
+    position: absolute;
+    z-index: -1;
+    width: 160%;
+    top: 50%;
+    left: -40%;
+}
+
+.frame-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+.frame-div::-webkit-scrollbar {
+    display: none;
+}
+
+.win {
+    background-color: rgba(178, 178, 178, 0.46);
+    position: relative;
+    justify-content: center;
+    display: flex;
+    border-radius: 35px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.win:hover{
+    background-color: #fc8803;
+    box-shadow: 0px 10px 10px #ff9900;
+    color:white;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.text-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    margin-left: 75px;
+    font-size: 25px;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+}
+
+.helmet-in-div{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 70px;
+}
+
+@media only screen and (min-width: 900px) {
+    .text-div {
+        width: 300px;
+        font-size: 1.6em;
+        margin-left: 0;
+    }
+    
+    .helmet-in-div {
+        width: 90px;
+        top: 12%;
+    }
+
+    .tire-img-1 {
+        display: none;
+    }
+
+    .tire-img-2 {
+        display: none;
+    }
+    
+}
