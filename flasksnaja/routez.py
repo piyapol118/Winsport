@@ -23,3 +23,11 @@ def third():
 @routes.route("/about")
 def about():
     return render_template("about_page.html")
+
+@routes.route("/login")
+def login():
+    return render_template("Login_page.html")
+
+@routes.route("/register")
+def regist():
+    return render_template("register_page.html")
