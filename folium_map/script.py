@@ -36,4 +36,6 @@ popup2 = folium.Popup(iframe2, max_width=650)
 
 marker2 = folium.Marker(location=[13.728018637540828, 100.77791790248858], popup=popup2, tooltip=tooltip_en).add_to(maps)
 
+marker3 = folium.Marker(location=[13.72874879275372, 100.7781562959654]).add_to(maps)
+
 maps.save("./flasksnaja/templates/routemap.html")
