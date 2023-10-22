@@ -4,7 +4,7 @@ routes = Blueprint("routes", __name__)
 
 @routes.route("/")
 def home():
-    return render_template("index.html")
+    return "home_page"
 
 @routes.route("/map")
 def maps():
