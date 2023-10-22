@@ -34,3 +34,14 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
+
+document.querySelectorAll(".carousel img").forEach(slide =>{
+    slide.onclick = () => {
+        document.querySelector('.popup-img').style.display = 'block';
+        document.querySelector('.popup-img img').src = slide.getAttribute("src");
+    }
+});
+
+document.querySelector('.popup-img span').onclick = () => {
+    document.querySelector('.popup-img').style.display = 'none';
+}

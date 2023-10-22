@@ -14,7 +14,11 @@ body {
 
 .tire-img-1, 
 .tire-img-3, 
-.tire-img-5 {
+.tire-img-5,
+.tire-img-7,
+.tire-img-9,
+.tire-img-11,
+.tire-img-13 {
     position: absolute;
     width: 150%;
     top: -10%;
@@ -30,7 +34,11 @@ body {
 
 
 .tire-img-2,
-.tire-img-4 {
+.tire-img-4,
+.tire-img-6,
+.tire-img-8,
+.tire-img-10,
+.tire-img-12 {
     position: absolute;
     width: 150%;
     top: 50%;
@@ -43,6 +51,42 @@ body {
 
 .tire-img-4 {
     top: 175%;
+}
+
+.tire-img-5 {
+    top: 245%;
+}
+
+.tire-img-6 {
+    top: 305%;
+}
+
+.tire-img-7 {
+    top: 370%;
+}
+
+.tire-img-8 {
+    top: 435%;
+}
+
+.tire-img-9 {
+    top: 495%;
+}
+
+.tire-img-10 {
+    top: 565%;
+}
+
+.tire-img-11 {
+    top: 620%;
+}
+
+.tire-img-12 {
+    top: 695%;
+}
+
+.tire-img-13 {
+    top: 745%;
 }
 
 .places {
@@ -64,7 +108,7 @@ body {
 }
 
 .carousel {
-    height: 35vh;
+    height: 60vh;
     background-color: rgb(218, 218, 218);
     display: flex;
     width: 80%;
@@ -78,6 +122,44 @@ body {
     font-size: 2em;
 }
 
+.popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    z-index: 100;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+.carousel:hover {
+    cursor: pointer;
+}
+
 .slide {
     position: absolute;
     inset: 0;
@@ -88,10 +170,14 @@ body {
 
 .slide img {
     display: block;
+    border-radius: 30px 30px 0px 0px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
 }
+
 
 .slide[data-active] {
     opacity: 1;
@@ -123,11 +209,11 @@ body {
 
 
 .carousel-button.pre {
-    left: 1em;
+    left: 0.5em;
 }
 
 .carousel-button.next {
-    right: 1em;
+    right: 0.5em;
 }
 
 .description, .description-last-box {
@@ -158,9 +244,16 @@ body {
 
 
 @media only screen and (min-width: 460px) {
-    .tire-img-4 {
+    .tire-img-12, .tire-img-13 {
         display: none;
     }
+}
+
+@media only screen and (max-width: 760px){
+    .popup-img img {
+        width: 90%;
+    }
+    
 }
 
 @media only screen and (min-width: 640px) {
@@ -174,9 +267,20 @@ body {
 }
 
 @media only screen and (min-width: 700px) {
+
     .tire-img-1,
     .tire-img-2,
-    .tire-img-3 {
+    .tire-img-3,
+    .tire-img-4,
+    .tire-img-5,
+    .tire-img-6,
+    .tire-img-7,
+    .tire-img-8,
+    .tire-img-9,
+    .tire-img-10,
+    .tire-img-11,
+    .tire-img-12,
+    .tire-img-13 {
         display: none;
     }
 
