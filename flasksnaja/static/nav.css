@@ -96,6 +96,7 @@ nav ul li a:hover {
 .change {
     box-shadow: 0px 0px 10px #ff6600;
     background-color: #f3960b;
+    transition: 0.7s;
     -webkit-transform: scale(1.1);
     transform: scale(1.2);
 }
@@ -120,6 +121,11 @@ nav ul li a:hover {
 
     .menu-active {
         display: block;
+        transition: translate var(--animation-timing);
+    }
+
+    .menu .menu-active {
+        transition: 0.7s;
     }
 
     .hamburg {

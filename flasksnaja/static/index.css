@@ -329,17 +329,16 @@ p {
   }
 
   .win1 {
-    position: absolute;
-    top: 10%;
+    position: fixed;
+    top: 38%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
     font-size: 120px;
 
   }
 
   .win2 {
-    position: absolute;
-    top: 40%;
+    position: fixed;
+    top: 47%;
     font-size: 50%;
     left: 52%;
     transform: translateY(-50%) translateX(-50%);
@@ -347,7 +346,7 @@ p {
 
   .win,
   .win-active {
-    position: relative;
+    position: fixed;
     font-size: 100px;
     top: 29%;
     width: 70%;
@@ -364,8 +363,10 @@ p {
   }
 
   .enter-web {
+    position: fixed;
+    transform: translateY(-50%) translateX(-50%);
     z-index: 2;
-    top: 35%;
+    top: 56%;
     background-color: #ff6600;
     color: white;
     text-shadow: none;

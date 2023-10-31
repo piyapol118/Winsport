@@ -13,6 +13,7 @@ function toggleHam(x) {
         myMenu.className = 'menu'
         winDiv.className = 'win'
     }
+    
 
 }
 
