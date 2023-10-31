@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, flash
 
 routes = Blueprint("routes", __name__)
 
@@ -24,10 +24,28 @@ def third():
 def about():
     return render_template("about_page.html")
 
-@routes.route("/login")
+@routes.route("/login", methods=["GET", "POST"])
 def login():
-    return render_template("Login_page.html")
+    return render_template("Login_page.html", boolean=True)
 
-@routes.route("/register")
+@routes.route("/register", methods=["GET", "POST"])
 def regist():
+    if request.method == "POST":
+        email = request.form.get('email')
+        firstName = request.form.get('firstName')
+        password1 = request.form.get('password1')
+        password2 = request.form.get('password2')
+
+        if len(email) < 4:
+            flash("อีเมลของคุณไม่ถูกต้อง", category="error")
+        elif len(firstName) < 3:
+            flash("ชื่อผู้ใช้ต้องมีความยาวไม่ต่ำกว่า 3 ตัวอักษร", category='error') 
+        elif password1 != password2:
+            flash("รหัสผ่านไม่ตรงกัน", category='error')
+        elif len(password1) < 7:
+            flash("รหัสผ่านต้องมีความยาวไม่ต่ำกว่า 7 ตัวอักษร", category='error')
+        else:
+            flash("สร้างบัญชีผู้ใช้สำเร็จ", category='success')
+        
+            # add user to database 
     return render_template("register_page.html")
