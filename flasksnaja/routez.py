@@ -36,10 +36,10 @@ def regist():
         password1 = request.form.get('password1')
         password2 = request.form.get('password2')
 
-        if len(email) < 4:
+        if len(firstName) < 3:
+            flash("ชื่อผู้ใช้ต้องมีความยาวไม่ต่ำกว่า 3 ตัวอักษร", category='error')
+        elif len(email) < 4 or "@" not in email:
             flash("อีเมลของคุณไม่ถูกต้อง", category="error")
-        elif len(firstName) < 3:
-            flash("ชื่อผู้ใช้ต้องมีความยาวไม่ต่ำกว่า 3 ตัวอักษร", category='error') 
         elif password1 != password2:
             flash("รหัสผ่านไม่ตรงกัน", category='error')
         elif len(password1) < 7:
