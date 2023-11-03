@@ -19,6 +19,8 @@ p {
   margin-right: 0;
 }
 
+
+
 .iphone-14-6 {
   position: relative;
   background-color: transparent;
@@ -40,7 +42,7 @@ p {
 }
 
 .iphone-14-6-item {
-  z-index: -1;
+  z-index: -2;
 }
 
 .iphone-14-6-child {
@@ -63,9 +65,14 @@ p {
 .iphone-14-6-inner {
   top: 257.73px;
   left: -213.33px;
+  z-index: -1;
   background-color: var(--color-black);
   width: 199.92px;
   height: 826.41px;
+}
+.iphone-14-6-child{
+  z-index: -1;
+
 }
 
 .group-icon {
@@ -176,6 +183,7 @@ p {
   background-color: rgb(255, 255, 255);
   border: none;
   padding: 20px;
+  margin-bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
   color: rgb(3, 3, 3);

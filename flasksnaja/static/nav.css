@@ -30,15 +30,17 @@ nav ul li a {
     transition: 0.5s;
     font-size: 18px;
     padding: 16px;
-    z-index: 2;
+    z-index: 800;
 }
 
 nav ul li a:hover {
     box-shadow: 0px 0px 10px #ff6600;
+    text-decoration: none;
+    color: white;
     background-color: #f3960b;
     -webkit-transform: scale(1.1);
     transform: scale(1.2);
-    z-index: 2;
+    z-index: 800;
 }
 
 .nav-wrapper {
@@ -78,6 +80,7 @@ nav ul li a:hover {
     border-radius: 6px;
     margin-bottom: 6px;
     transition: 0.4s;
+    z-index: 100;
 }
 
 .bar2 {
@@ -120,6 +123,7 @@ nav ul li a:hover {
 
     .menu-active {
         display: block;
+        z-index: 200;
         transition: translate var(--animation-timing);
     }
 
@@ -129,6 +133,7 @@ nav ul li a:hover {
 
     .hamburg {
         display: inline-block;
+        
     }
 
     .ellipse-3-svg {

@@ -18,14 +18,21 @@
         <div class="nav-wrapper">
             <img class="ellipse-3-svg" alt="" src="../static/public/ellipse-3--svg@2x.png" />
             <ul class="menu" id="myMenu">
-                <li><a href="/sec">HOME</a></li>
-                <li><a href="/about">ABOUT</a></li>
-                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/sec">หน้าหลัก</a></li>
+                <li><a href="/third">ซุ้มทั้งหมด</a></li>
+                <li><a href="/about">เกี่ยวกับเรา</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="/login">โปรไฟล์</a></li>
+                <li><a href="/logout">ออกจากระบบ</a></li>
+                {% else %}
+                <li><a href="/login">ล็อกอิน</a></li>
+                {% endif %}
             </ul>
             <div class="hamburg" onclick="toggleHam(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
+                <div class="bar4"></div>
             </div>
         </div>
     </nav>
