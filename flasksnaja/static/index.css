@@ -196,6 +196,33 @@ p {
   box-shadow: 0px 0px 10px #ff9900;
   background-color: #f3d00b;
   -webkit-transform: scale(1.1);
+  transform: translateY(-50%) translateX(-50%);
+  transform: scale(1.2);
+}
+
+.enter-web-2 {
+  position: relative;
+  font-size: 20%;
+  letter-spacing: 0.1em;
+  border-radius: 8px;
+  font-weight: 900;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  padding: 20px;
+  margin-bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+  color: rgb(3, 3, 3);
+  text-shadow: 1px 2px #a79f89;
+  transition: 0.5s;
+
+}
+
+.enter-web-2:hover {
+  box-shadow: 0px 0px 10px #ff9900;
+  background-color: #f3d00b;
+  -webkit-transform: scale(1.1);
+  transform: translateY(-50%) translateX(-50%);
   transform: scale(1.2);
 }
 
@@ -327,7 +354,7 @@ p {
 }
 
 
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:940px) {
   .iphone-14-6 {
     position: relative;
   }
@@ -374,11 +401,33 @@ p {
     position: fixed;
     transform: translateY(-50%) translateX(-50%);
     z-index: 2;
-    top: 56%;
+    top: 57%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    padding-right: 30px;
     background-color: #ff6600;
     color: white;
     text-shadow: none;
   }
 
+  .enter-web:hover {
+      transform: translateY(-50%) translateX(-50%);
+  }
+
+   .enter-web-2 {
+    position: fixed;
+    font-size: 24px;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 2;
+    top: 69%;
+    background-color: #ff6600;
+    color: white;
+    text-shadow: none;
+  }
+
+  .enter-web-2:hover {
+      transform: translateY(-50%) translateX(-50%);
+  }
 
 }

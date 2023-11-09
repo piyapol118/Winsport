@@ -8,23 +8,27 @@ routes = Blueprint("routes", __name__)
 
 @routes.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", user=current_user)
 
 @routes.route("/map")
 def maps():
-    return render_template("routemap.html")
+    return render_template("routemap.html", user=current_user)
 
 @routes.route("/sec")
 def sec():
-    return render_template("second_page.html")
+    return render_template("second_page.html", user=current_user)
 
 @routes.route("/third")
 def third():
-    return render_template("third.html")
+    return render_template("third.html", user=current_user)
 
 @routes.route("/about")
 def about():
-    return render_template("about_page.html")
+    return render_template("about_page.html", user=current_user)
+
+@routes.route("/rate")
+def rate():
+    return render_template("rate_of_price.html", user=current_user)
 
 @routes.route("/logout")
 @login_required
