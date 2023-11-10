@@ -74,6 +74,15 @@ body {
     cursor: pointer;
 }
 
+.heart-box {
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.heart-div {
+    text-align: center;
+}
+
 .win:hover{
     background-color: #fc8803;
     box-shadow: 0px 10px 10px #ff9900;
@@ -100,6 +109,36 @@ body {
     width: 70px;
 }
 
+input {
+    display: none;
+}
+
+input:checked + label svg {
+    fill: hsl(0, 100%, 63%);
+    stroke: hsl(0, 100%, 63%);
+    transition: 0.5s;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+    .list-box {
+        width: 85%;
+        margin-left: -20px;
+    }
+
+    .helmet-in-div{
+        width: 60px;
+        top: 25%;
+    }
+    .text-div {
+        font-size: 1.4em;
+        margin-left: 55px ;
+    }
+}
+    
+
+
 @media only screen and (min-width: 900px) {
     .text-div {
         width: 300px;
@@ -108,7 +147,7 @@ body {
     }
     
     .helmet-in-div {
-        width: 90px;
+        width: 80px;
         top: 12%;
     }
 

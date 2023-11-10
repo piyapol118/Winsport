@@ -38,6 +38,7 @@ def logout():
     logout_user()
     return redirect('/login')
 
+<<<<<<< Updated upstream
 @routes.route("/addfav") #page display your fav
 def another_page():
     email = session.get("email")
@@ -96,6 +97,14 @@ def toggle():
     else:
         image_url = "../static/public/morter-removebg-preview.png"
     return jsonify({"image_url": image_url, "button_state": button_state})
+=======
+
+@routes.route("/logout")
+@login_required
+def logout():
+    logout_user()
+    return redirect('/login')
+>>>>>>> Stashed changes
 
 @routes.route("/login", methods=["GET", "POST"])
 def login():
