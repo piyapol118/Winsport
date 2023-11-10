@@ -1,0 +1,13 @@
+body {
+    background-color: #fc8803;
+}
+.FAVBUT {
+    width: 100px;
+    height: 100px;
+}
+.profile {
+    background-color: rgb(255, 232, 29);
+    border-radius: 100px;
+    width: 720px;
+    height: 1024px;
+}
