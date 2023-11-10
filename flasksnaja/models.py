@@ -12,5 +12,6 @@ class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True) # unique = True กันคนซ้ำ
     password = db.Column(db.String(150))
+    button_state = db.Column(db.Integer, default=0)
     first_name = db.Column(db.String(150))
     notes = db.relationship('Note')
