@@ -38,7 +38,6 @@ def logout():
     logout_user()
     return redirect('/login')
 
-<<<<<<< Updated upstream
 @routes.route("/addfav") #page display your fav
 def another_page():
     email = session.get("email")
@@ -61,9 +60,7 @@ def another_page():
 @routes.route("/pro", methods=['GET']) #demo profile but have fav button
 @login_required 
 def pro():
-    
     email = session.get("email")
-    
     user = User.query.filter_by(email=email).first()
     if user:
         button_state = user.button_state
@@ -76,7 +73,25 @@ def pro():
     else:
         flash("ไม่พบบัญชี", category="error")
         return redirect("/register")
-    
+
+
+@routes.route("/profile_test", methods=['GET']) #demo profile but have fav button
+@login_required 
+def pro_test():
+    email = session.get("email")
+    user = User.query.filter_by(email=email).first()
+    if user:
+        button_state = user.button_state
+        first_name = user.first_name
+        if button_state == 1:
+            image_path = "../static/public/สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง001.jpg"
+        else:
+            image_path = "../static/public/morter-removebg-preview.png"
+        return render_template("profile_page.html", first_name=first_name ,email=email, user=current_user, button_state=image_path, image_path=image_path)
+    else:
+        flash("ไม่พบบัญชี", category="error")
+        return redirect("/register")
+
 @routes.route("/toggle", methods=['POST']) #the buttun that can change data
 @login_required
 def toggle():
@@ -97,14 +112,6 @@ def toggle():
     else:
         image_url = "../static/public/morter-removebg-preview.png"
     return jsonify({"image_url": image_url, "button_state": button_state})
-=======
-
-@routes.route("/logout")
-@login_required
-def logout():
-    logout_user()
-    return redirect('/login')
->>>>>>> Stashed changes
 
 @routes.route("/login", methods=["GET", "POST"])
 def login():
@@ -123,8 +130,27 @@ def login():
                 flash('รหัสผ่านไม่ถูกต้อง กรุณาลองอีกครั้ง', category="error")
         else:
             flash("ชื่อของคุณไม่มีในระบบ", category='error')
-
     return render_template("Login_page.html", user=current_user)
+
+@routes.route("/get_profile", methods=["GET", "POST"]) 
+def get_profile():
+    if request.method == "GET":
+        return jsonify({"current_user": "HJelo"})
+    else:
+        email = request.form.get("email")
+        password = request.form.get("password")
+        age = request.form.get("age")
+        User.query.filter_by(email=email).update({'first_name': password})
+        db.session.commit()
+        print(email, password,age,"<<<<<<<<------------------")
+        return jsonify(email, password,age)
+
+
+@routes.route("/tester", methods=["GET", "POST"]) 
+def tester():
+    return render_template("tester.html")
+
+
 
 @routes.route("/register", methods=["GET", "POST"])
 def regist():
