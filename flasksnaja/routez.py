@@ -10,7 +10,11 @@ button_state = 0
 
 @routes.route("/")
 def home():
+<<<<<<< HEAD
+    return render_template("index.html", user=current_user)
+=======
     return render_template("index.html", user=None)
+>>>>>>> 3f977e47d165c6e22aa7aabce82b893f20aaa8d2
 
 @routes.route("/map")
 def maps():
@@ -27,10 +31,13 @@ def third():
 @routes.route("/about")
 def about():
     return render_template("about_page.html", user=current_user)
+<<<<<<< HEAD
+=======
 
 @routes.route("/rate")
 def rate():
     return render_template("rate_of_price.html", user=current_user)
+>>>>>>> 3f977e47d165c6e22aa7aabce82b893f20aaa8d2
 
 @routes.route("/logout")
 @login_required
