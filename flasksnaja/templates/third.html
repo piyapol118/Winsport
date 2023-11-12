@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <img class="tire-img-1" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-2" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-3" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-4" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-5" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-6" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-7" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-8" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-9" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-10" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-11" src="../static/public/group-20-4@2x.png">
-    <img class="tire-img-12" src="../static/public/group-20-5@2x.png">
-    <img class="tire-img-13" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-1" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-2" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-3" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-4" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-5" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-6" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-7" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-8" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-9" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-10" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-11" src="../static/public/group-20-4@2x.png">
+<img class="tire-img-12" src="../static/public/group-20-5@2x.png">
+<img class="tire-img-13" src="../static/public/group-20-4@2x.png">
 
 <link rel="stylesheet" href="../static/third_page.css">
 <div class="places">
@@ -21,187 +21,178 @@
 </div>
 <div class="win-list">
     <div class="carousel" data-carousel> <!-- Fbt -->
-        <a id="yaek">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/fbt/A095716B-C02B-4944-9021-1D06DCDE0BFB.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/fbt/CF5A1CCB-DBDC-4DBA-A86F-38815530B2D5.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/fbt/EE97100E-1355-4CAD-8277-064C4C7CC6A7.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c1')" id="c1" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/fbt/A095716B-C02B-4944-9021-1D06DCDE0BFB.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/fbt/CF5A1CCB-DBDC-4DBA-A86F-38815530B2D5.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/fbt/EE97100E-1355-4CAD-8277-064C4C7CC6A7.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- 4 แยก 1 -->
-        <a id="cross1">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/4 แยก 1/CDC94698-4648-4DD1-9F8A-8EE33CEB8822.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/4 แยก 1/E06457AE-84E9-4B89-8219-47C001DB605B.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul data-slides>
+            <li onclick="popup('c2')" id="c2" class="slide" data-active>
+                <img src="../static/public/4 แยก 1/CDC94698-4648-4DD1-9F8A-8EE33CEB8822.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/4 แยก 1/E06457AE-84E9-4B89-8219-47C001DB605B.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- 4 แยก 2 -->
-        <a id="cross2">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/4 แยก 2/19508B58-B48F-4D85-8393-8ED65B79805C.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/4 แยก 2/DC3CA756-4499-4EED-993E-9E140CB9BA35.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/4 แยก 2/ADE2D691-A13C-44FB-8F1A-DD8A7BAE9DB0.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c3')" id="c3" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/4 แยก 2/19508B58-B48F-4D85-8393-8ED65B79805C.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/4 แยก 2/DC3CA756-4499-4EED-993E-9E140CB9BA35.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/4 แยก 2/ADE2D691-A13C-44FB-8F1A-DD8A7BAE9DB0.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 1 -->
-        <a id="tuek12">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี ซุ้มที่ 1/06FE5F44-1A47-48CE-A9CA-3CAA48D734AF.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี ซุ้มที่ 1/1756C6E2-A81A-44EC-B727-4DD4C6A1CB39.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี ซุ้มที่ 1/CE65E222-D420-4B8B-A60E-12E03ED50B07.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a> 
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c4')" id="c4" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี ซุ้มที่ 1/06FE5F44-1A47-48CE-A9CA-3CAA48D734AF.jpg"
+                    alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี ซุ้มที่ 1/1756C6E2-A81A-44EC-B727-4DD4C6A1CB39.jpg"
+                    alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี ซุ้มที่ 1/CE65E222-D420-4B8B-A60E-12E03ED50B07.jpg"
+                    alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 2 -->
-        <a id="klong4">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี ซุ้ม 2/84664282-67B1-4429-90C9-A3E544A05B40.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี ซุ้ม 2/หมู.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c5')" id="c5" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี ซุ้ม 2/84664282-67B1-4429-90C9-A3E544A05B40.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี ซุ้ม 2/หมู.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 3 -->
-        <a id="sang1">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี 3/ABC7FE28-6D46-4ED6-A919-030D87A55A97.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี 3/D0645277-8109-4E7D-B9B3-7F7608EFB8C0.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c6')" id="c6" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี 3/ABC7FE28-6D46-4ED6-A919-030D87A55A97.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี 3/D0645277-8109-4E7D-B9B3-7F7608EFB8C0.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 4 -->
-        <a id="sang2">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี 4/8E186702-8B98-4E04-A32C-225B106EBE6F.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี 4/CB19D4C2-F601-45FB-AF25-03240D0C82E9.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c7')" id="c7" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี 4/8E186702-8B98-4E04-A32C-225B106EBE6F.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี 4/CB19D4C2-F601-45FB-AF25-03240D0C82E9.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 5 -->
-        <a id="rnp">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี 5/4A054B8A-E103-4ADA-BEDC-25A6179AE4D7.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี 5/6511A663-6242-42D6-AB51-74C9F005DBCE.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c8')" id="c8" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี 5/4A054B8A-E103-4ADA-BEDC-25A6179AE4D7.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี 5/6511A663-6242-42D6-AB51-74C9F005DBCE.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
     <div class="carousel" data-carousel> <!-- เกกีซุ้ม 6 -->
-        <a id="banklang">
-            <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="../static/public/เกกี 6/28A6DD22-EA38-4552-BFAD-A67B32F4AB97.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี 6/D32D21CF-5408-46B4-A907-3E94362D6C3B.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-                <li class="slide">
-                    <img src="../static/public/เกกี 6/09AA3294-D62C-45F5-AE79-D3224904F5C7.jpg" alt="เกิดข้อผิดผลาด">
-                </li>
-            </ul>
-        </a>
+        <button class="carousel-button pre" data-carousel-button="prev">&#8249;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+        <ul onclick="popup('c9')" id="c9" data-slides>
+            <li class="slide" data-active>
+                <img src="../static/public/เกกี 6/28A6DD22-EA38-4552-BFAD-A67B32F4AB97.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี 6/D32D21CF-5408-46B4-A907-3E94362D6C3B.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+            <li class="slide">
+                <img src="../static/public/เกกี 6/09AA3294-D62C-45F5-AE79-D3224904F5C7.jpg" alt="เกิดข้อผิดผลาด">
+            </li>
+        </ul>
     </div>
     <div class="description-last-box">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum rerum
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ullam expedita consequatur fugiat fugit earum
+        rerum
         maiores minus quidem repellendus eligendi rem, a dolorum ea illum, animi maxime odit iure?
     </div>
-    
+
     <div class="popup-img" id="pop-up">
         <span>&times;</span>
         <img src="" alt="เกิดข้อผิดผลาด">
     </div>
 
 </div>
-
-
-
 
 {% endblock %}

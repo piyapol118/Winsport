@@ -13,7 +13,7 @@ function toggleHam(x) {
         myMenu.className = 'menu'
         winDiv.className = 'win'
     }
-    
+
 
 }
 
@@ -35,13 +35,14 @@ buttons.forEach(button => {
         delete activeSlide.dataset.active
     })
 })
-document.querySelectorAll(".carousel img").forEach(slide => {
-    slide.onclick = () => {
-        document.querySelector('.popup-img').style.display = 'block';
-        document.querySelector('.popup-img img').src = slide.getAttribute("src");
-    }
+
+function popup(id) {
+    console.log(document.getElementById(id).querySelector('li[data-active]'))
+    document.querySelector('.popup-img').style.display = 'block';
+    document.querySelector('.popup-img img').src = document.getElementById(id).querySelector('li[data-active] img').src
+
+}
 
 document.querySelector('.popup-img span').onclick = () => { //ไว้ลบรูป
-        document.querySelector('.popup-img').style.display = 'none';
-    };
-});
+    document.querySelector('.popup-img').style.display = 'none';
+};
