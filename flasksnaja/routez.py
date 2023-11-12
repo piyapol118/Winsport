@@ -10,11 +10,7 @@ button_state = 0
 
 @routes.route("/")
 def home():
-<<<<<<< HEAD
-    return render_template("index.html", user=current_user)
-=======
     return render_template("index.html", user=None)
->>>>>>> 3f977e47d165c6e22aa7aabce82b893f20aaa8d2
 
 @routes.route("/map")
 def maps():
@@ -31,13 +27,10 @@ def third():
 @routes.route("/about")
 def about():
     return render_template("about_page.html", user=current_user)
-<<<<<<< HEAD
-=======
 
 @routes.route("/rate")
 def rate():
     return render_template("rate_of_price.html", user=current_user)
->>>>>>> 3f977e47d165c6e22aa7aabce82b893f20aaa8d2
 
 @routes.route("/logout")
 @login_required
@@ -45,7 +38,6 @@ def logout():
     logout_user()
     return redirect('/login')
 
-<<<<<<< Updated upstream
 @routes.route("/addfav") #page display your fav
 def another_page():
     email = session.get("email")
@@ -104,14 +96,6 @@ def toggle():
     else:
         image_url = "../static/public/morter-removebg-preview.png"
     return jsonify({"image_url": image_url, "button_state": button_state})
-=======
-
-@routes.route("/logout")
-@login_required
-def logout():
-    logout_user()
-    return redirect('/login')
->>>>>>> Stashed changes
 
 @routes.route("/login", methods=["GET", "POST"])
 def login():
