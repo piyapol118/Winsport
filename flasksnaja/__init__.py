@@ -15,7 +15,7 @@ def create_app():
     from .routez import routes
     app.register_blueprint(routes)
 
-    from .models import User, Note
+    from .models import User, Pic
 
     with app.app_context():
         db.create_all()

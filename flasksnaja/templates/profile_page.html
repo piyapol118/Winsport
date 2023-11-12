@@ -1,5 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
+<link rel="stylesheet" href="../static/profile.css">
+<div class="center">
+    <h1>Profile</h1>
+    <div class="profile-container">
+        <form>
+            <img src="../static/public/profile.png" id="profile-pic">
+            <label style="margin-top: 20px; font-size: 1em; cursor: pointer;" for="input-file">เปลี่ยนรูปภาพ</label>
+            <input style="display: none; " type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"
+                name="input-file;">
+            <input type="submit" value="Save">
+        </form>
+        <p style="border: none;">Username : {{ first_name}}</h1>
+        <p style="border: none; margin-top: -10px;">Email : {{ email }}</h1>
+        <h3 style="border: none;">รายการโปรด</h3>
+        <div class="fav-container"
+            style="border-style: solid; position: relative; display: flex; width: 95%; height: 210px;">
+        </div>
+    </div>
+</div>
+<script>
+    let profilePic = document.getElementById("profile-pic");
+    let inputFile = document.getElementById("input-file");
 
+    inputFile.onchange = function () {
+        profilePic.src = URL.createObjectURL(inputFile.files[0])
+    }
+
+</script>
 {% endblock %}

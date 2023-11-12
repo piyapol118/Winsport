@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for, jsonify, session
-from .models import User
+from .models import User, Pic
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
@@ -96,6 +96,21 @@ def toggle():
     else:
         image_url = "../static/public/morter-removebg-preview.png"
     return jsonify({"image_url": image_url, "button_state": button_state})
+
+
+@routes.route("/pro_test", methods=['GET']) #demo profile but have fav button
+@login_required 
+def pro_test():
+    email = session.get("email")
+    
+    user = User.query.filter_by(email=email).first()
+    if user:
+        first_name = user.first_name
+        return render_template("profile_page.html", first_name=first_name ,email=email, user=current_user)
+    else:
+        flash("ไม่พบบัญชี", category="error")
+        return redirect("/register")
+
 
 @routes.route("/login", methods=["GET", "POST"])
 def login():
