@@ -401,7 +401,7 @@ p {
     position: fixed;
     transform: translateY(-50%) translateX(-50%);
     z-index: 2;
-    top: 58%;
+    top: 60%;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 20px;
