@@ -142,7 +142,7 @@ input:checked + label svg {
         top: 25%;
     }
     .text-div {
-        font-size: 1.4em;
+        font-size: 16px;
         margin-left: 55px ;
     }
 }
