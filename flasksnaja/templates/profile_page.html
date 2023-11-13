@@ -5,21 +5,48 @@
 <div class="center">
     <h1>Profile</h1>
     <div class="profile-container">
-        <form>
-            <img src="../static/public/profile.png" id="profile-pic">
-            <label style="margin-top: 20px; font-size: 1em; cursor: pointer;" for="input-file">เปลี่ยนรูปภาพ</label>
-            <input style="display: none; " type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"
-                name="input-file;">
-            <input type="submit" value="Save">
-        </form>
-        <p style="border: none;">Username : {{ first_name}}</h1>
+        <img src="{{user.pic}}" id="profile-pic">
+        <label style="margin-top: 20px; font-size: 1em; cursor: pointer;" for="input-file">เปลี่ยนรูปภาพ</label>
+        <input style="display: none; " type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"
+                name="input-file;">      
+        <p style="border: none;">Username : {{ first_name }}</h1>
         <p style="border: none; margin-top: -10px;">Email : {{ email }}</h1>
-        <h3 style="border: none;">รายการโปรด</h3>
-        <div class="fav-container"
-            style="border-style: solid; position: relative; display: flex; width: 95%; height: 210px;">
-        </div>
+        <br>
+        <input class="buntuek-button" type="submit" value="Save" onclick="uploadImage()">
+
     </div>
 </div>
+<script>
+    function uploadImage() {
+        var input = document.getElementById('input-file');
+        var file = input.files[0];
+        console.log("uploading", file)
+        if (file) {
+            var formData = new FormData();
+            formData.append('image', file);
+
+            fetch('/upload-endpoint', {
+                method: 'POST',
+                body: formData
+            })
+                //.then(response => response.json())
+                .then(data => {
+                    console.log('Image uploaded successfully:', data);
+                    // Handle the response from the server as needed
+                    window.location.reload();
+                            
+                })
+                .catch(error => {
+                    console.error('Error uploading image:', error);
+                    // Handle errors
+                });
+        } else {
+            console.error('No file selected');
+        }
+
+    }
+</script>
+
 <script>
     let profilePic = document.getElementById("profile-pic");
     let inputFile = document.getElementById("input-file");

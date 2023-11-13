@@ -1,0 +1,107 @@
+* {
+    margin-top: 0;
+    font-family: 'Kanit';
+}
+
+body {
+    background-image: url(../static/public/bg.jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-top: 53px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 13%;
+    z-index: -1;
+    top: 13%;
+    width: 70%;
+    height: 62vh;
+
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-container input {
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.profile-container label:hover {
+    color: orange;
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    transition: 0.25s;
+    border: none;
+
+}
+
+.profile-container img {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+.buntuek-button {
+    position: relative;
+    left: -78px;
+    background-color: #ff6600;
+    color: white;
+    text-shadow: none;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+    border-style: none;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    text-shadow: 1px 2px #a79f89;
+    top: -15px;
+}
+
+.buntuek-button:hover {
+    background-color: #f3ad0b;
+  -webkit-transform: scale(1.1);
+  transform: translateY(-50%) translateX(-50%);
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width:680px) {
+    .profile-container img {
+        width: 120px;
+        height: 120px;
+        
+    }
+
+}

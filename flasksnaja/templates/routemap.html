@@ -76,13 +76,15 @@
 </body>
 <script>
 
-
+    const urlParams = new URLSearchParams(window.location.search);
+    const lat = urlParams.get('lat');
+    const lng = urlParams.get('lng');
     var map_42e0f2679895d06aee7fe069ed0f1271 = L.map(
         "map_42e0f2679895d06aee7fe069ed0f1271",
         {
-            center: [13.7294363, 100.7785291],
+            center: [lat? lat: 13.7294363, lng? lng: 100.7785291],
             crs: L.CRS.EPSG3857,
-            zoom: 16,
+            zoom: 18,
             zoomControl: true,
             preferCanvas: false,
         }
@@ -94,7 +96,7 @@
 
     var tile_layer_3e5dfc8000c361532d78872dbb655956 = L.tileLayer(
         "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        { "attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
+        { "attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
     );
 
 
@@ -129,7 +131,7 @@
 
     marker_f31214f8196625ffee49ef0c98c52c53.bindTooltip(
         `<div>
-                     วินแยกเทคโนฯ
+                     วินแยกเทคโนฯ​
                  </div>`,
         { "sticky": true }
     );
@@ -379,7 +381,7 @@
         { "sticky": true }
     );
 
-
+ 
     var marker_78092f07325e164e963bb50dead88216 = L.marker(
         [13.727816731091863, 100.76352784022401],
         {}
@@ -413,6 +415,28 @@
                  </div>`,
         { "sticky": true }
     );
+
+
+    var allMarkers = [];
+
+    map_42e0f2679895d06aee7fe069ed0f1271.eachLayer(function (layer) {
+        if (layer instanceof L.Marker) {
+            allMarkers.push(layer);
+        }
+    });
+
+    // Print information about each marker
+    allMarkers.forEach(function (marker, idx) {
+        console.log('Marker ' + (idx + 1) + ':');
+        console.log('Location: ' + marker.getLatLng().lat+ "------------"+marker.getLatLng().lng);
+        console.log('Popup: ' + (marker.getPopup() ? marker.getPopup().getContent() : null));
+        console.log('-'.repeat(30));
+        if(marker.getLatLng().lat === +lat && marker.getLatLng().lng === +lng){
+
+            marker.openPopup();
+        }
+    });
+
 
 </script>
 {% endblock %}
